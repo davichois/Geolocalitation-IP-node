@@ -1,0 +1,21 @@
+{
+  "name": "geolocation-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "David Prada <davidprali27@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "external-ip": "2.3.1",
+    "geoip-lite": "1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  }
+}
