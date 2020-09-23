@@ -23,4 +23,19 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/:ip", (req, res) => {
+  const ip = req.params.ip;
+  const geo = geoip.lookup(ip);
+  res.json({
+    "info De Geo": {
+      ipPublic: ip,
+      country: geo.country,
+      region: geo.region,
+      city: geo.city,
+      timezone: geo.timezone,
+      Lo_La: geo.ll,
+    },
+  });
+});
+
 module.exports = router;
